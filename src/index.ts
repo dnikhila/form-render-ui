@@ -1,3 +1,1 @@
-import MyCounter from './components/App'
-
-export { MyCounter }
+export { default as RenderForm } from "./render";

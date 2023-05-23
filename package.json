@@ -3,11 +3,13 @@
   "version": "1.1.0",
   "description": "",
   "scripts": {
-    "build": "tsc",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
-    "prepare": "npm run build"
-  },
+    "prepare": "npm run build",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    },
   "author": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -41,6 +43,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.1",
     "@mui/styled-engine-sc": "^5.12.0",
+    "form-render-ui-library": "^1.1.0",
     "styled-components": "^5.3.10"
   }
 }

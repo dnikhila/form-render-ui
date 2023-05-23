@@ -1192,6 +1192,17 @@ for-each@^0.3.3:
   dependencies:
     is-callable "^1.1.3"
 
+form-render-ui-library@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/form-render-ui-library/-/form-render-ui-library-1.1.0.tgz#10b171389f0b8dbf733f5d0a3f2b32196ffe8b23"
+  integrity sha512-8Lbad9t/vo50YDl5r7IqoIyNiAtlrVFw+ESN94vWHR4kPLgEaZNJ+YDiJB4V+XXxdWEUvkxNI+4oMtZ/sg4Mpg==
+  dependencies:
+    "@emotion/react" "^11.11.0"
+    "@emotion/styled" "^11.11.0"
+    "@mui/material" "^5.13.1"
+    "@mui/styled-engine-sc" "^5.12.0"
+    styled-components "^5.3.10"
+
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
